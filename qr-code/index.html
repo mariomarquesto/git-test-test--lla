@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/Mario.jpg"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <title>QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <style>
+      /* Estilos generales para el cuerpo */
+      body {
+        display: flex; /* Usamos flexbox para centrar el contenido */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        min-height: 100vh; /* Asegura que ocupe al menos toda la altura de la ventana */
+        margin: 0; /* Elimina el margen predeterminado del body */
+        font-family: sans-serif; /* Fuente básica, puedes cambiarla */
+        background-color: hsl(212, 95%, 48%); /* Color de fondo claro */
+      }
 
-  Improve your front-end skills by building projects
+      /* Estilos para el contenedor principal del componente */
+      .container {
+        background-color: hsl(0, 0%, 100%); /* Fondo blanco para la tarjeta */
+        padding: 20px;
+        border-radius: 15px; /* Bordes redondeados */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        max-width: 320px; /* Ancho máximo para la tarjeta */
+        margin: 20px; /* Margen para pantallas más pequeñas */
+      }
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      /* Estilos para la imagen del QR */
+      .qr-image {
+        max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 10px; /* Bordes redondeados para la imagen */
+        margin-bottom: 20px; /* Espacio debajo de la imagen */
+      }
+
+      /* Estilos para los títulos y párrafos */
+      h1 {
+        font-size: 22px;
+        color: hsl(218, 44%, 22%); /* Color de texto oscuro */
+        margin-bottom: 15px; /* Espacio debajo del título */
+        line-height: 1.3; /* Espaciado entre líneas */
+      }
+
+      p {
+        font-size: 15px;
+        color: hsl(220, 15%, 55%); /* Color de texto más claro */
+        margin-bottom: 20px; /* Espacio debajo del párrafo */
+        padding: 0 10px; /* Pequeño padding a los lados para el texto */
+      }
+
+      /* Estilos para la atribución */
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 20px; /* Espacio arriba de la atribución */
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none; /* Quitar subrayado predeterminado */
+      }
+      .attribution a:hover {
+        text-decoration: underline; /* Subrayar al pasar el mouse */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/Mario.jpg" alt="QR code image" class="qr-image" />
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+
+      <div class="attribution">
+        Challenge by Frontend Mentor. Coded by
+        <a
+          href="https://github.com/mariomarquesto/git-test-test--lla"
+          target="_blank"
+          >mariomarquesto</a
+        >.
+      </div>
+    </div>
+  </body>
 </html>
