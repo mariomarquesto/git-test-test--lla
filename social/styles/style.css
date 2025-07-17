@@ -1,4 +1,4 @@
-/* Define Variables CSS para los colores del Style Guide */
+/* Define Variables CSS para los colores del Style Guide*/
 :root {
   --green: hsl(75, 94%, 57%);     /* Green: hsl(75, 94%, 57%) */
   --white: hsl(0, 0%, 100%);     /* White: hsl(0, 0%, 100%) */
@@ -96,10 +96,6 @@ footer {
 }
 
 .attribution {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centra horizontalmente */
-  font-size: 12px; /* Tamaño de fuente para la atribución */
   font-size: 11px;
   text-align: center;
   color: var(--white); /* Color de texto blanco */
@@ -120,18 +116,15 @@ footer {
    pantalla es al menos 600px de ancho.                  */
 /* ---------------------------------------------------- */
 @media (min-width: 600px) {
-  /* En este caso, la tarjeta ya es bastante responsiva con max-width.
-     Podrías ajustar el max-width para desktop si el diseño lo sugiere
-     para ser un poco más ancho, pero 320px es común. */
-  
+  /* No se necesitan muchos cambios aquí para este diseño simple,
+     ya que la tarjeta ya es bastante responsiva con max-width.
+     Si el diseño de Figma para desktop muestra un ancho de tarjeta
+     diferente, lo ajustarías aquí. */
+  /* .profile-card {
+     max-width: 380px; // Ejemplo: si la tarjeta es un poco más ancha en desktop
+  } */
 }
 
-@media (min-width: 320px) {
-  /* En este caso, la tarjeta ya es bastante responsiva con max-width.
-     Podrías ajustar el max-width para desktop si el diseño lo sugiere
-     para ser un poco más ancho, pero 320px es común. */
-  
-}
 /* Si tuvieras un diseño de varias columnas o elementos más complejos que cambien
    drásticamente en pantallas muy grandes, aquí iría otra media query,
    por ejemplo, para el ancho de diseño de escritorio de 1440px. */
