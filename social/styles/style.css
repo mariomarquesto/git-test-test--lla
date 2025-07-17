@@ -1,0 +1,142 @@
+/* Define Variables CSS para los colores del Style Guide */
+:root {
+  --green: hsl(75, 94%, 57%);     /* Green: hsl(75, 94%, 57%) */
+  --white: hsl(0, 0%, 100%);     /* White: hsl(0, 0%, 100%) */
+  --grey-700: hsl(0, 0%, 20%);   /* Grey 700: hsl(0, 0%, 20%) */
+  --grey-800: hsl(0, 0%, 12%);   /* Grey 800: hsl(0, 0%, 12%) */
+  --grey-900: hsl(0, 0%, 8%);    /* Grey 900: hsl(0, 0%, 8%) */
+}
+
+/* ---------------------------------------------------- */
+/* ESTILOS BASE (MOBILE-FIRST)                          */
+/* Estos estilos se aplican por defecto a todas las pantallas,
+   optimizados para dispositivos móviles (ej. 375px).    */
+/* ---------------------------------------------------- */
+
+body {
+  font-family: 'Inter', sans-serif; /* Familia de fuente: Inter */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Usa flexbox para centrar el contenido */
+  flex-direction: column; /* Apila los elementos verticalmente (tarjeta y atribución) */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+  background-color: var(--grey-900); /* Fondo principal Grey 900 */
+  color: var(--white); /* Color de texto por defecto blanco */
+  font-size: 14px; /* Tamaño de fuente para el párrafo */
+}
+
+.profile-card {
+  background-color: var(--grey-800); /* Fondo de la tarjeta Grey 800 */
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px; /* Margen para que no se pegue a los bordes en pantallas pequeñas */
+  text-align: center;
+  max-width: 320px; /* Un ancho máximo común para tarjetas de perfil en móvil */
+  width: 100%; /* Asegura que ocupe el ancho disponible hasta el max-width */
+  box-sizing: border-box; /* Incluye padding y border en el width/height */
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700; /* Peso de fuente 700 para títulos */
+  margin-bottom: 4px;
+  color: var(--white); /* Color de texto blanco */
+}
+
+.profile-location {
+  font-size: 14px;
+  font-weight: 600; /* Peso de fuente 600 */
+  color: var(--green); /* Color de texto Green */
+  margin-bottom: 24px;
+}
+
+.profile-bio {
+  font-size: 14px; /* Tamaño de fuente para el párrafo */
+  font-weight: 400; /* Peso de fuente 400 */
+  color: var(--white); /* Color de texto blanco */
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espacio entre los botones sociales */
+}
+
+.social-button {
+  display: block; /* Ocupa todo el ancho disponible */
+  background-color: var(--grey-700); /* Fondo del botón Grey 700 */
+  color: var(--white); /* Texto del botón blanco */
+  padding: 12px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700; /* Peso de fuente 700 */
+  font-size: 14px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-button:hover {
+  background-color: var(--green); /* Fondo del botón Green en hover */
+  color: var(--grey-900); /* Texto del botón Grey 900 en hover */
+}
+
+/* Estilos para la atribución (opcional, generalmente al pie de página) */
+footer {
+  margin-top: 20px;
+}
+
+.attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  font-size: 12px; /* Tamaño de fuente para la atribución */
+  font-size: 11px;
+  text-align: center;
+  color: var(--white); /* Color de texto blanco */
+}
+
+.attribution a {
+  color: var(--green); /* Color de enlace Green */
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERIES PARA PANTALLAS DE ESCRITORIO           */
+/* Estos estilos SOBRESCRIBEN los anteriores cuando la
+   pantalla es al menos 600px de ancho.                  */
+/* ---------------------------------------------------- */
+@media (min-width: 600px) {
+  /* En este caso, la tarjeta ya es bastante responsiva con max-width.
+     Podrías ajustar el max-width para desktop si el diseño lo sugiere
+     para ser un poco más ancho, pero 320px es común. */
+  
+}
+
+@media (min-width: 320px) {
+  /* En este caso, la tarjeta ya es bastante responsiva con max-width.
+     Podrías ajustar el max-width para desktop si el diseño lo sugiere
+     para ser un poco más ancho, pero 320px es común. */
+  
+}
+/* Si tuvieras un diseño de varias columnas o elementos más complejos que cambien
+   drásticamente en pantallas muy grandes, aquí iría otra media query,
+   por ejemplo, para el ancho de diseño de escritorio de 1440px. */
+/* @media (min-width: 1440px) {
+    body {
+        // Ajustes para monitores muy grandes, si es necesario
+    }
+} */
